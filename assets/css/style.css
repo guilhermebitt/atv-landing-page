@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@keyframes sectionEntry {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', 'Arial', 'sans-serif';
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #242428;
+}
+
+h1 {
+  font-size: 2rem;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand-icon {
+  font-size: 1.50rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+div.spacer {
+  height: 900px;
+}
+
+
+section h3, p {
+  margin: 0.5rem 0;
+}
+
+section {
+  opacity: 0%;
+}
+section.visible {
+  opacity: 100%;
+  animation: sectionEntry 0.5s forwards;
+}
+
+h1 {
+  color: #f8b474;
+}
+
+button#to-contact {
+	width: 100%;
+  cursor: pointer;
+	padding: 20px 8px;
+  margin: 40px 0px;
+	background-color: #a2642a;
+	color: #fef7ef;
+	font-size: large;
+	border: none;
+	border-radius: 5px;
+  transition: transform 0.5s ease;
+}
+
+button#to-contact:hover {
+  transform: translateY(-5px);
+}
+
+
+section#about {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  padding: 50px 0;
+  gap: 20px;
+  h1 {
+    width: 100%;
+    text-align: center;
+  }
+  img {
+    height: 250px;
+    width: fit-content;
+    border-radius: 50%;
+  }
+  p {
+    max-width: 60%;
+    font-size: 1.15rem;
+  }
+
+  span {
+    font-style: italic;
+  }
+}
+
+
+
+section#glr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 50px 0;
+}
+
+section#glr>div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  row-gap: 50px;
+  width: 70%;
+  padding: 50px 0px;
+}
+
+div.img-glr {
+  width: 200px;
+  height: 100%;
+  position: relative;
+  padding: 5px;
+  border: 1px solid white;
+  border-radius: 10px;;
+  transition: transform 0.5s ease;
+}
+
+div.img-glr:hover {
+  transform: translateY(-10px);
+}
+
+div.img-glr img{
+  width: 100%;
+  height: 100px;
+  border-radius: 5px;
+}
+
+
+
+section#wip {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  padding: 50px 0;
+  gap: 20px;
+  h1 {
+    width: 100%;
+    text-align: center;
+  }
+  img {
+    width: 40%;
+    margin: 0px;
+  }
+  p {
+    max-width: 40%;
+    font-size: 1.15rem;
+  }
+  span {
+    font-style: italic;
+  }
+}
+
+
+
+section#contact {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  padding: 50px 0;
+  gap: 20px;
+  h1 {
+    width: 100%;
+    text-align: center;
+  }
+  img {
+    width: 100%;
+  }
+  span {
+    font-style: italic;
+  }
+}
+
+
+@media only screen and (max-width:480px){
+  section#about {
+    flex-direction: column;
+    img {
+      height: 180px;
+    }
+    p {
+      font-size: 1rem;
+      text-align: center;
+    }
+  }
+
+  section#glr>div {
+    justify-content: center;
+  }
+
+  section#glr .img-glr {
+    width: 400px;
+  }
+
+  section#glr img {
+    height: auto;
+  }
+
+  section#glr a {
+    margin: 0px 20px;
+  }
+
+  section#wip {
+    width: 100%;
+    img {
+      width: 70%;
+    }
+    p {
+      max-width: 70%;
+    }
+  }
+}
+
+@media only screen and (min-width:481px) and (max-width:768px) {
+  section#about {
+    flex-direction: column;
+    img {
+      height: 180px;
+    }
+    p {
+      font-size: 1rem;
+      text-align: center;
+    }
+  }
+
+  section#glr>div {
+    justify-content: center;
+  }
+
+  section#glr .img-glr {
+    width: 400px;
+  }
+
+  section#glr img {
+    height: auto;
+  }
+
+  section#glr a {
+    margin: 0px 30px;
+  }
+
+  section#wip {
+    width: 100%;
+    img {
+      width: 60%;
+    }
+    p {
+      max-width: 60%;
+    }
+  }
+}
+
+@media only screen and (min-width:769px) and (max-width:1200px) {
+  section#about {
+    img {
+      height: 180px;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  section#glr>div {
+    justify-content: center;
+  }
+
+  section#glr .img-glr {
+    width: 400px;
+  }
+
+  section#glr img {
+    height: auto;
+  }
+
+  section#glr a {
+    margin: 0px 30px;
+  }
+
+  section#wip {
+    width: 100%;
+    img {
+      width: 60%;
+    }
+    p {
+      max-width: 60%;
+    }
+  }
+}

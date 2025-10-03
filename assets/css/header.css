@@ -1,0 +1,62 @@
+header ul, header li, header a {
+  height: 100%;
+}
+
+header a {
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+header a:hover {
+  i {
+    color: #888888;
+  }
+  color: #888888;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: #242428;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+  height: 3rem;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+header nav ul li {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+
+
+
+/* RESPONSIVIDADE */
+@media (max-width: 767px){
+  header nav {
+    flex-direction: column;
+    height: fit-content;
+    gap: 10px;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  header ul {
+    padding: 10px;
+  }
+}

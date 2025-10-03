@@ -1,0 +1,34 @@
+footer div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 1rem 100px;
+}
+
+footer a {
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+footer a:hover {
+  i {
+    color: #888888;
+  }
+  color: #888888;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0 30px;
+}
+
+footer ul li {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}

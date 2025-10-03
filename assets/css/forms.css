@@ -1,0 +1,138 @@
+form {
+	display: flex;
+	justify-content: center;
+}
+
+fieldset {
+	display: flex;
+	flex-wrap: wrap;
+	width: 70%;
+	gap: 5px 0px;
+	padding: 15px;
+	padding-bottom: 40px;
+}
+
+button {
+	width: calc(50% - 38px);
+	padding: 20px 8px;
+	background-color: #a2642a;
+	color: #fef7ef;
+	font-size: large;
+	border: none;
+	border-radius: 5px;
+}
+
+button[type="reset"] {
+	background-color: #fef7ef;
+	color: #a2642a;
+}
+
+input {
+	width: calc(100% - 38px);
+	padding: 8px 8px;
+	border: 2px solid #00000000;
+	border-bottom: 2px solid #f8b474;
+	background-color: #fef7ef;
+}
+
+input:focus {
+	outline: none;
+	border: 2px solid #f8b474;
+}
+
+input[type="file"] {
+	border: none;
+	padding: 0px;
+	width: calc(100% - 16px);
+}
+
+input[type="checkbox"] {
+	width: 1.5em;
+	height: 1.5em;
+	margin: 0px 10px;
+	cursor: pointer;
+}
+
+::file-selector-button {
+	background-color: #fef7ef;
+	width: 100%;
+	padding: 10px 0px;
+}
+
+div.input-group,
+div.button-group {
+	max-width: fit-content;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+div.button-group {
+	flex-direction: row;
+	justify-content: center;
+	min-width: 100%;
+	max-width: 100%;
+	gap: 20px;
+}
+
+div.input-group label {
+	align-self: first baseline;
+	padding-left: 8px;
+}
+
+div.firstname-box,
+div.lastname-box,
+div.password-box {
+	min-width: 50%;
+}
+
+div.tel-box,
+div.age-box {
+	max-width: 20%;
+}
+
+div.email-box {
+	min-width: 60%;
+}
+
+div.file-box {
+	min-width: 100%;
+	margin: 20px 0px;
+}
+
+div.check-box {
+	min-width: 100%;
+	margin: 20px 0px;
+	flex-direction: row;
+	justify-content: center;
+}
+
+@media only screen and (max-width:480px)  {
+    fieldset {
+        width: 100%;
+    }
+
+    .input-group {
+        min-width: 100% !important;
+    }
+}
+
+@media only screen and (min-width:481px) and (max-width:768px)  {
+    fieldset {
+        width: 100%;
+    }
+
+    .input-group {
+        min-width: 100% !important;
+    }
+}
+
+@media only screen and (min-width:769px) and (max-width:1200px)  {
+    fieldset {
+        width: 100%;
+    }
+
+    .input-group {
+        min-width: 100% !important;
+    }
+}

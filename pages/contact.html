@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/header.css">
+  <link rel="stylesheet" href="../assets/css/footer.css">
+  <link rel="stylesheet" href="../assets/css/forms.css">
+  <title>Guilherme Bittencourt - Uma landpage pessoal</title>
+</head>
+
+
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./about.html">Sobre</a></li>
+        <li><a href="./contact.html">Contato</a></li>
+      </ul>
+      <ul>
+        <li><a href="https://www.instagram.com/gui.a.bitt"><i class="fa-brands fa-instagram brand-icon"></a></i></li>
+        <li><a href="https://www.linkedin.com/in/guilherme-bitt/"><i class="fa-brands fa-linkedin brand-icon"></a></i></li>
+        <li><a href="https://github.com/guilhermebitt"> <i class="fa-brands fa-github brand-icon"></a></i></li>
+      </ul>
+    </nav>
+    <hr>
+  </header>
+
+
+
+  <main>
+    <section id="contact">
+      <h1>Formulário de Contato</h1>
+      <form action="#" method="POST">
+        <fieldset>
+          <legend>Contato</legend>
+
+          <!-- NOME -->
+          <div class="input-group firstname-box">
+            <label for="firstname">Nome</label>
+            <input id="firstname-input" name="firstname" type="text" placeholder="John" required>
+          </div>
+
+          <!-- SOBRENOME -->
+          <div class="input-group lastname-box">
+            <label for="lastname">Sobrenome</label>
+            <input id="lastname-input" name="lastname" type="text" placeholder="Doe" required>
+          </div>
+
+          <!-- TELEFONE -->
+          <div class="input-group tel-box">
+            <label for="tel">Telefone</label>
+            <input id="tel-input" name="tel" type="tel" placeholder="+55 31 995389129" required>
+          </div>
+
+          <!-- E-MAIL -->
+          <div class="input-group email-box">
+            <label for="email">E-mail</label>
+            <input id="email-input" name="email" type="email" placeholder="john.doe@email.com" required>
+          </div>
+
+          <!-- IDADE -->
+          <div class="input-group age-box">
+            <label for="">Idade</label>
+            <input id="age-input" name="age" type="number" placeholder="32" required>
+          </div>
+
+          <!-- SENHA -->
+          <div class="input-group password-box">
+            <label for="">Senha</label>
+            <input id="password-input" name="password" type="password" placeholder="John@Doe32" required>
+          </div>
+
+          <!-- CONFIRMAR SENHA -->
+          <div class="input-group password-box">
+            <label for="">Confirmar Senha</label>
+            <input id="password-input-confirm" name="password-confirm" type="password" placeholder="John@Doe32" required>
+          </div>
+
+          <!-- ENVIAR CURRÍCULO -->
+          <div class="input-group file-box">
+            <label for="">Enviar Currículo</label>
+            <input id="file-input" name="curriculum" type="file" required>
+          </div>
+
+          <!-- CONCORDAR -->
+          <div class="input-group check-box">
+            <input id="checkbox-input" name="terms" type="checkbox" required>
+            <label for="">Eu concordo com os <a href="#">termos e condições</a></label>
+          </div>
+
+          <div class="button-group">
+            <button type="reset">Resetar</button>
+            <button type="submit">Enviar</button>
+          </div>
+
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+
+
+  <footer>
+    <hr class="footer-hr">
+    <div>
+      <ul>
+        <h2>Pages</h2>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./about.html">Sobre</a></li>
+        <li><a href="./contact.html">Contato</a></li>
+      </ul>
+      <ul>
+        <h2>Social Media</h2>
+        <li><a href="https://www.instagram.com/gui.a.bitt"><i class="fa-brands fa-instagram brand-icon"></a></i></li>
+        <li><a href="https://www.linkedin.com/in/guilherme-bitt/"><i class="fa-brands fa-linkedin brand-icon"></a></i></li>
+        <li><a href="https://github.com/guilhermebitt"> <i class="fa-brands fa-github brand-icon"></a></i></li>
+      </ul>
+      <ul>
+        <h2>FAQ</h2>
+        <li>Como que eu saio deste site?</li>
+        <li>Qual teu nome?</li>
+        <li>Você é muito bonito</li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="../scripts/main.js"></script>
+</body>
+
+
+</html>
